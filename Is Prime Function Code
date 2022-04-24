@@ -1,0 +1,15 @@
+#A python Program to check whether a number is prime or not
+def isprime(num):
+    #number less than 2 is not a Prime number
+    if (num<2):
+        return False
+    for i in range (2,num//3):
+        if(num%i==0):
+            return False
+    return True
+    
+number=int(input("Enter Number: "))
+if isprime(number):
+        print(number,"Is a Prime Number")
+else:
+        print(number,"Is Not a Prime Number")
